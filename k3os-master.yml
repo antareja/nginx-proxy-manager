@@ -1,0 +1,22 @@
+ssh_authorized_keys:
+- ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEA23XOHORF4VraqszaYbIwoK0BMh/Q6B1VifsvMNAq/xq6i+yvEvK8CZwI2eLy70sTGi1FfGbbgg4rTUyeyMnwKxw8GCoXeTGIEXavi6+05A04kitYRVmPyfSkj5jqI5jumj/+bKXanDenY88kPZGvye8y2JLltkfjFXXl/szdI+fwzxquntj9VOU3gdWSNLSWrnRs0g5xbefGL0QWSg9viZw2Dty0ElObq4Jk0JZrCL52Fe5BMNHn1hvaIEM9YEMzVJxUy2u6PLDpEzY/TFmZpESXwxVGDfaNP9upaqccGQI2LqI+gV4h9i7N6tco/lxk2fX9zAdcWY80LmyTl7VPaw== mitra
+- ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAgKTrsChPBT4K0LKb9zraq0zKFdX8C9IGCnxcMtn0zb8YBCNnjsX3VRFJI3YkLBy0+H6U9sAbHwx9XPAQ5b7CUOTEbQCgPcLv69rpBVqrjqMASwpQg/ftxeCiQySLIW+bW0SgvoUq8820v2ZeHHoIMNd8ZrFLOGraNobuUopVeksHscY1ZM+oapfR54rE/JB48o3/bjWTQHpPygpOuB4NMQnUrVpuBxRjMtR/oYVFRusrsWGE+RGh70KPtgfEQPFsimGaiW8u5C6sZQi/v+3e7sscyld9aZxhGB6QaQ36UPGAszesaboS5gWjuZUl+vQVTYKdUWlgU+MSYWUbFl1h6Q== rsa-key-20201213
+- ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAgEA8OW6rXhrEixCz4XQMJEAI4em1q+d5MdKL09JykMbX/TPUYVXJGUIWNh3IqsKiemw4OBQRoFf5mfpaNRiHPK8iPiv+67FxGiyBI1DauxtyEx4SfQcxBzebTMaHNhWteya8CcyvXoS8cSP2Gihe8OUJrvlADsPc+bksV6HRSM1js69KUQgDxXbEZAfpsW1sqcIcIWjpQzY7C/fCWl0Grltqd/zoY8RkTDlTBKMJjVqbX3wPku2GOaedRpLGGvidcq8BxklD3knKDhHZVvJGwZTSReCYLPVrVdUIJxk6/cDRNLSZCk06W6moqS6ZiD7RWG477XflkDI+sH6vojy7fzTnBgI/YNv/HSMLSyqwkwXjaI2oTYSgc0ptEERb9YOtVcj9xbfwPHezUQKOKDrwRYb6lYvgjiBDeAswnVtM5DgA/rLmfImbwg4wNha6dr672CQ+n66nXXITl710MG/vHJUYytL+RxDhs19+gFvToTUVz0u6rt1KAfrzPHeW/RyUrQGDy+9J2rhobMC5Yfu5CitviJIqYTZ9kyHUx1AfbA4bMwOYTgz6XqEeg3OpKUh56KaKYxba4NZx1XoYEUuSapzRA+pIi5isi7iIpiVpJnlCzCsKCqML1zauSv2gyvBXmwYq3RrG9CC9P8DGhTmj2XHKHWIrsnTY2oLdVXHGQg3nV8= mitra-4096
+
+k3os:
+  data_sources:
+  - aws
+  - gcp
+  modules:
+  - kvm
+  - nvme
+  dns_nameservers:
+  - 1.1.1.1
+  - 1.0.0.1
+  ntp_servers:
+  - time.google.com
+  - time.windows.com
+  password: "$1$RFClWACj$6HH9cOC74XFJ1a/aXEwyL1"
+  token: OS6impoZ6gAs6/9wrZdSEXjmZgZZ79OVsHR0ME2PFPg=
+  k3s_args:
+  - server
